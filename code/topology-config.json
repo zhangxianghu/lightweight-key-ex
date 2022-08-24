@@ -1,0 +1,122 @@
+{
+	"host_info": [
+		{
+			"host_name": "client",
+			"host_type": "client",
+			"ip_address": "10.0.0.1",
+			"mac_address": "00:00:00:00:00:01",
+			"cpu": 0.3
+		},
+		{
+			"host_name": "server",
+			"host_type": "server",
+			"ip_address": "10.0.0.2",
+			"mac_address": "00:00:00:00:00:02",
+			"cpu": 0.3
+		},
+		{
+			"host_name": "helper1",
+			"host_type": "server",
+			"ip_address": "10.0.0.4",
+			"mac_address": "00:00:00:00:00:04",
+			"cpu": 1
+		},
+ 		{
+			"host_name": "helper2",
+			"host_type": "server",
+			"ip_address": "10.0.0.5",
+			"mac_address": "00:00:00:00:00:05",
+			"cpu": 1
+		},
+ 		{
+			"host_name": "helper3",
+			"host_type": "server",
+			"ip_address": "10.0.0.6",
+			"mac_address": "00:00:00:00:00:06",
+			"cpu": 1
+		},
+ 		{
+			"host_name": "helper4",
+			"host_type": "server",
+			"ip_address": "10.0.0.7",
+			"mac_address": "00:00:00:00:00:07",
+			"cpu": 1
+		},    	{
+			"host_name": "ryu",
+			"host_type": "sdn",
+			"ip_address": "10.0.0.3",
+			"mac_address": "00:00:00:00:00:03",
+			"cpu": 1
+		}
+	],
+	"switch_info": [
+		{
+			"switch_name": "ovs_1"
+		}
+	],
+	"controller_info": [
+		{
+			"controller_name": "ryuController",
+			"ip_address": "10.0.0.3",
+			"port": 6633
+		}
+	],
+	"link_info": [
+		{
+			"source": "client",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},
+		{
+			"source": "server",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},
+		{
+			"source": "helper1",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},
+  		{
+			"source": "helper2",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},
+   		{
+			"source": "helper3",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},
+    	{
+			"source": "helper4",
+			"destination": "ovs_1",
+			"bw": 10,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		},    	
+		{
+			"source": "ryu",
+			"destination": "ovs_1",
+			"bw": 100,
+			"delay": "5ms",
+			"loss": 2,
+			"max_queue_size": 1000
+		}
+	]
+}
